@@ -1,7 +1,4 @@
 package br.com.fintech.modules;
-//import resorce
-import br.com.fintech.resorce.ResorceChat;
-
 
 public class Depositar extends Conta {
     public static void depositarValor(double valorDeposito) {
@@ -11,8 +8,7 @@ public class Depositar extends Conta {
             saldo += valorDeposito;
 
             // novo saldo
-            System.out.println("Saldo: " + getSaldo());
-            System.out.println(ResorceChat.breakLineResorc() + ResorceChat.lineResorc());
+            System.out.println("\nSaldo: " + getSaldo() + "\n");
         }
     }
 }

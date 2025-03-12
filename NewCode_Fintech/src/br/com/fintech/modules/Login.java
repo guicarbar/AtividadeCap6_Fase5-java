@@ -1,5 +1,6 @@
 package br.com.fintech.modules;
 
+// import bibliotecas
 import java.util.Scanner;
 
 public class Login {
@@ -25,7 +26,7 @@ public class Login {
     public void setLogado(boolean logado) {this.logado = logado;}
 
 
-    //
+    // polimorfismo - makelogin - login
     public void makeLogin() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite seu email: ");

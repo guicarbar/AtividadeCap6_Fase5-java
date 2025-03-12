@@ -1,8 +1,6 @@
 package br.com.fintech.modules;
 
-// import biblioteca
-import br.com.fintech.resorce.ResorceChat;
-
+// import bibliotecas
 import java.util.Scanner;
 
 public class Cadastro extends Login {
@@ -11,42 +9,47 @@ public class Cadastro extends Login {
     private String newEmail = getEmail();
     private String newSenha = getSenha();
 
-    //Seters
-    public String getNewSenha() {
-        return newSenha;
-    }
 
+    // getters
+    public String getNewSenha() {return newSenha;}
     public String getNewEmail() {
         return newEmail;
     }
-
     public String getConfirmaSenha() {
         return confirmaSenha;
     }
-
     public String getCpf() {
         return cpf;
     }
 
 
-    //Gueters
+    // setters
     public void setNewEmail(String newEmail) {
         this.newEmail = newEmail;
     }
-
     public void setNewSenha(String newSenha) {
         this.newSenha = newSenha;
     }
-
     public void setConfirmaSenha(String confirmaSenha) {
         this.confirmaSenha = confirmaSenha;
     }
-
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
 
+    // verificador da senha
+    public boolean analiserPassword(String senha1, String senha2) {
+        if (senha1.equals(senha2)) {
+            return true;
+        } else {
+            System.out.println("\nAs senhas precisam ser identicas!");
+            return false;
+        }
+    }
+
+
+    // polimorfismo - makelogin - cadastro
     @Override
     public void makeLogin() {
         Scanner sc = new Scanner(System.in);
@@ -57,25 +60,21 @@ public class Cadastro extends Login {
         System.out.println("Confirme sua senha:");
         String confirmaSenha = sc.next() + sc.nextLine();
 
+        // passa pra o verificador de senha
+        analiserPassword(newSenha, confirmaSenha);
+
+
+        System.out.println("Digite seu CPF");
+        String cpf = sc.next();
+        System.out.println("Digite seu Nome");
+        String nomeCadastro = sc.next();
+
+
+        // passo pra variavel
+        setCpf(cpf);
+        setNewEmail(newEmail);
+        Conta.setNome(nomeCadastro);
         setNewSenha(newSenha);
         setConfirmaSenha(confirmaSenha);
-
-
-        // verificar senha
-        if (newSenha == confirmaSenha) {
-            System.out.println("Digite seu CPF");
-            String cpf = sc.next();
-            System.out.println("Digite seu Nome");
-            String nomeCadastro = sc.next();
-            setLogado(true);
-
-            // passo pra variavel
-            setCpf(cpf);
-            setNewEmail(newEmail);
-            Conta.setNome(nomeCadastro);
-        } else {
-            System.out.println(ResorceChat.breakLineResorc() + "As senhas precisam ser identicas!" + ResorceChat.breakLineResorc());
-            setLogado(false);
-        }
     }
 }
