@@ -20,7 +20,7 @@ Este projeto visa proporcionar uma experiência prática no desenvolvimento de a
 
 Projeto desenvolvido em colaboração com:
 👨‍💻 Mateus Barbosa Domingues
-![Github](https://github.com/MBDomingues)
+[Github](https://github.com/MBDomingues)
 
 
 ---
