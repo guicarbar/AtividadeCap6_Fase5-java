@@ -7,7 +7,7 @@ public class Login {
     // declaração variaveis
     private String senha;
     private String email;
-    private boolean logado;
+    // private boolean logado;
 
     // getter
     public String getEmail() {
@@ -16,14 +16,12 @@ public class Login {
     public String getSenha() {
         return senha;
     }
-    public boolean getLogado() {return logado; }
 
     // setters
     public void setSenha(String senha) {
         this.senha = senha;
     }
     public void setEmail(String email) {this.email = email;}
-    public void setLogado(boolean logado) {this.logado = logado;}
 
 
     // polimorfismo - makelogin - login
@@ -35,8 +33,6 @@ public class Login {
         String senha = sc.next();
         System.out.println("Digite seu Nome");
         String nomeLogin = sc.next();
-
-        setLogado(true);
 
         // passa pro login
         setEmail(email);

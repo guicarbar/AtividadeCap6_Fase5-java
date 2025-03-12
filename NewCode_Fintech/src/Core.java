@@ -14,7 +14,8 @@ public class Core {
 
         //‘Login’ e Cadastro
         int op;
-        login.setLogado(false);
+
+        boolean logado = false;
 
         do {
             System.out.println("Bem vindo!\n1. Fazer login\n2. Cadastrar");
@@ -24,14 +25,20 @@ public class Core {
             switch (op) {
                 case 1:
                     login.makeLogin();
+                    logado = true;
                     break;
                 case 2:
                     cadastro.makeLogin();
+                    if(cadastro.getNewSenha().equals(cadastro.getConfirmaSenha())) {
+                        logado = true;
+                    } else {
+                        System.out.println("As senhas devem ser identicas!\n");
+                    }
                     break;
                 default:
                     System.out.println("Escolha uma opção valdia!");
             }
-        } while (!login.getLogado());
+        } while (!logado);
 
 
 

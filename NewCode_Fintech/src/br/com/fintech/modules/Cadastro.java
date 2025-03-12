@@ -12,15 +12,10 @@ public class Cadastro extends Login {
 
     // getters
     public String getNewSenha() {return newSenha;}
-    public String getNewEmail() {
-        return newEmail;
-    }
     public String getConfirmaSenha() {
         return confirmaSenha;
     }
-    public String getCpf() {
-        return cpf;
-    }
+
 
 
     // setters
@@ -38,17 +33,6 @@ public class Cadastro extends Login {
     }
 
 
-    // verificador da senha
-    public boolean analiserPassword(String senha1, String senha2) {
-        if (senha1.equals(senha2)) {
-            return true;
-        } else {
-            System.out.println("\nAs senhas precisam ser identicas!");
-            return false;
-        }
-    }
-
-
     // polimorfismo - makelogin - cadastro
     @Override
     public void makeLogin() {
@@ -59,16 +43,10 @@ public class Cadastro extends Login {
         String newSenha = sc.next() + sc.nextLine();
         System.out.println("Confirme sua senha:");
         String confirmaSenha = sc.next() + sc.nextLine();
-
-        // passa pra o verificador de senha
-        analiserPassword(newSenha, confirmaSenha);
-
-
         System.out.println("Digite seu CPF");
         String cpf = sc.next();
         System.out.println("Digite seu Nome");
         String nomeCadastro = sc.next();
-
 
         // passo pra variavel
         setCpf(cpf);
@@ -76,5 +54,5 @@ public class Cadastro extends Login {
         Conta.setNome(nomeCadastro);
         setNewSenha(newSenha);
         setConfirmaSenha(confirmaSenha);
-    }
+        }
 }
