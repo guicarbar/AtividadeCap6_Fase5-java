@@ -18,7 +18,7 @@ Este projeto visa proporcionar uma experiência prática no desenvolvimento de a
 
 ## 👥 Parceiro de Desenvolvimento
 
-Projeto desenvolvido em colaboração com:\
+Projeto desenvolvido em colaboração com:
 * 👨‍💻 Mateus Barbosa Domingues - [Github](https://github.com/MBDomingues)
 
 
