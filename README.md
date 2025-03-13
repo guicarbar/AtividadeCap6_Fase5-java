@@ -1,6 +1,6 @@
 🟢🟡🔴
 
-# AtividadeCap6_Fase2-Java
+# AtividadeFase5-Java
  
 ## Sobre o Projeto 📌
 
@@ -18,9 +18,8 @@ Este projeto visa proporcionar uma experiência prática no desenvolvimento de a
 
 ## 👥 Parceiro de Desenvolvimento
 
-Projeto desenvolvido em colaboração com:
-👨‍💻 Mateus Barbosa Domingues
-[Github](https://github.com/MBDomingues)
+Projeto desenvolvido em colaboração com:\
+* 👨‍💻 Mateus Barbosa Domingues - [Github](https://github.com/MBDomingues)
 
 
 ---

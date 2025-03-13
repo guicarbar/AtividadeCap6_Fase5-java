@@ -4,7 +4,6 @@ import br.com.fintech.modules.*;
 // import bibliotecas
 import java.util.Scanner;
 
-
 public class Core {
     private static Scanner sc = new Scanner(System.in);
     // main function
