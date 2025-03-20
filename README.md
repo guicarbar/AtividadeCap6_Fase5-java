@@ -26,7 +26,10 @@ Projeto desenvolvido em colaboração com:
 
 ## 🚀 Tecnologias Utilizadas
 
-Este projeto foi desenvolvido utilizando a linguagem Java, reforçando conceitos de POO (Programação Orientada a Objetos), manipulação de entradas e saídas de dados e boas práticas de desenvolvime
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+
+Este projeto foi desenvolvido utilizando a linguagem Java, reforçando conceitos de POO (Programação Orientada a Objetos), manipulação de entradas e saídas de dados e boas práticas de desenvolvimento.
+
 
 ---
 
